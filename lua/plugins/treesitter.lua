@@ -8,10 +8,10 @@ return {
         "cpp",
         "css",
         "fish",
-        "gitignore", -- 確保 gitignore 支持的解析器已安裝
+        "gitignore",
         "go",
         "graphql",
-        "http", -- 如果不支持，可以移除
+        "http",
         "java",
         "php",
         "rust",
