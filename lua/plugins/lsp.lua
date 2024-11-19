@@ -12,6 +12,7 @@ return {
         "typescript-language-server",
         "css-lsp",
         "rust-analyzer",
+        "gopls",
       })
     end,
   },
