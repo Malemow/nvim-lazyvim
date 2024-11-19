@@ -1,10 +1,39 @@
+local schema = "gruvbox"
+
 return {
-  -- "craftzdog/solarized-osaka.nvim",
-  lazy = true,
-  priority = 1000,
-  opts = function()
-    return {
-      transparent = true,
-    }
-  end,
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("kanagawa").setup({
+        background = {
+          dark = "wave", -- "wave", "dragon", "lotus"
+          light = "lotus",
+        },
+        transparent = true,
+      })
+    end,
+  },
+  {
+    "shaunsingh/nord.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "ellisonleao/gruvbox.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("gruvbox").setup({
+        transparent_mode = true,
+      })
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = schema,
+    },
+  },
 }
