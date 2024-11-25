@@ -24,3 +24,4 @@ opt.listchars = {
   precedes = "←", -- 行超出窗口左側時顯示箭頭
   nbsp = "␣", -- 不可斷空格用特殊符號表示
 }
+opt.shell = "pwsh"
